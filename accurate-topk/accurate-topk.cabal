@@ -1,0 +1,27 @@
+Name:                my-topk
+Version:             0.1
+Stability:           Experimental
+Build-type:          Simple
+Cabal-version:       >= 1.10
+
+executable my-topk
+  hs-source-dirs: src
+  main-is: Main.hs
+  default-language: Haskell2010
+
+  build-depends:
+    base                       >= 4     && < 5,
+    containers                 == 0.4.2.1
+
+  ghc-options: -threaded
+               -Wall
+               -fwarn-tabs
+               -funbox-strict-fields
+               -O2
+               -fno-warn-orphans
+               -Werror
+
+  default-extensions: FlexibleInstances,
+                      OverloadedStrings,
+                      MultiParamTypeClasses,
+                      ScopedTypeVariables
