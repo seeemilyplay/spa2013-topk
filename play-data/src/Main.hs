@@ -14,7 +14,7 @@ main = do
   if "count-histogram" `elem` args then do
       (dist :: CountHistogram) <- parseDistribution <$> readFile input
       (els :: [NumberedElement]) <- generateElements dist n ch
-      putStrLn $ show els
+      mapM_ (\(NumberedElement e) -> putStrLn $ show e) els
   else do
       (dist :: Histogram) <- parseDistribution <$> readFile input
       (els :: [NamedElement]) <- generateElements dist n ch

@@ -1,10 +1,10 @@
-Name:                accurate-topk
+Name:                my-topk
 Version:             0.1
 Stability:           Experimental
 Build-type:          Simple
 Cabal-version:       >= 1.10
 
-executable accurate-topk
+executable my-topk
   hs-source-dirs: src
   main-is: Main.hs
   default-language: Haskell2010
